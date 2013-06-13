@@ -1,0 +1,15 @@
+{
+    "/"        : "trythundr.Controller.home",
+    "/add"     : {
+        "GET":  "trythundr.Controller.addShow",
+        "POST": "trythundr.Controller.addSave"
+    },
+    "/_task/address" : {
+        "POST": "trythundr.TasksController.address"
+    },
+    "/show/{id}" : "trythundr.Controller.show",
+    "/edit/{id}" : {
+        "GET": "trythundr.Controller.editShow",
+        "POST": "trythundr.Controller.editSave"
+    }
+}
